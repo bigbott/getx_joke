@@ -47,3 +47,5 @@ app.*.map.json
 /macos/
 /linux/
 /windows/
+
+.codegpt

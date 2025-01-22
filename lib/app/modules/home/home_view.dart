@@ -30,6 +30,7 @@ class HomeView extends GetView<HomeController> {
                height: 60,
                width: 400,
                borderRadius: BorderRadius.circular(20),
+                borderColor: Colors.white,
                gradient: LinearGradient(
                  colors: [
                    Colors.white.withOpacity(0.40),

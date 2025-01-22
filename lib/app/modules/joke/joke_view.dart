@@ -22,7 +22,9 @@ class JokeView extends GetView<JokeController> {
               Colors.purple.shade700,
               Colors.black
             ],
+            
           ),
+          border: Border.all(color: Colors.white),
         ),
         child: Column(
           mainAxisAlignment: MainAxisAlignment.start,
@@ -46,6 +48,7 @@ class JokeView extends GetView<JokeController> {
                     height: 400,
                     width: 400,
                     borderRadius: BorderRadius.circular(20),
+                    borderColor: Colors.white,
                     gradient: LinearGradient(
                       colors: [
                         Colors.white.withOpacity(0.40),
@@ -101,6 +104,7 @@ class JokeView extends GetView<JokeController> {
                     height: 60,
                     width: 400,
                     borderRadius: BorderRadius.circular(20),
+                    borderColor: Colors.white,
                     gradient: LinearGradient(
                       colors: [
                         Colors.white.withOpacity(0.40),
