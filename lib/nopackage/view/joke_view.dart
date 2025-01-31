@@ -1,15 +1,26 @@
 import 'package:flutter/material.dart';
 import 'package:getx_joke/nopackage/global/service_locator.dart';
+import 'package:getx_joke/nopackage/view/home_view.dart';
 import 'package:getx_joke/nopackage/view/joke_view_model.dart';
 import 'package:getx_joke/nopackage/view/widgets/gradient_background.dart';
 import 'package:getx_joke/nopackage/view/widgets/translucent_panel.dart';
 
 class JokeView extends StatelessWidget {
+  const JokeView({super.key});
+
   @override
   Widget build(BuildContext context) {
     bool firstBuild = true;
     final jokeViewModel = SL<JokeViewModel>();
     return Scaffold(
+      appBar: AppBar(
+        leading: BackButton(
+          onPressed: () {
+             Navigator.of(context).pushReplacement(
+                    MaterialPageRoute(builder: (context) => const HomeView(), maintainState: false));
+          },
+        ),
+      ),
       body: GradientBackground(
         colors: [Colors.black, Colors.blue, Colors.black, Colors.purple],
         child: Column(

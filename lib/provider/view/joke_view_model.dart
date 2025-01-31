@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:getx_joke/nopackage/model/joke_model.dart';
-import 'package:getx_joke/nopackage/global/service_locator.dart';
-import 'package:getx_joke/nopackage/model/joke_service.dart';
-import 'package:getx_joke/nopackage/model/joke_service_interface.dart';
+import 'package:getx_joke/provider/model/joke_model.dart';
+import 'package:getx_joke/provider/global/service_locator.dart';
+import 'package:getx_joke/provider/model/joke_service.dart';
+import 'package:getx_joke/provider/model/joke_service_interface.dart';
 
 class JokeViewModel with ChangeNotifier {
   JokeServiceInterface jokeService;

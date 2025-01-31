@@ -22,7 +22,6 @@ class JokeView extends GetView<JokeController> {
               Colors.purple.shade700,
               Colors.black
             ],
-            
           ),
           border: Border.all(color: Colors.white),
         ),
@@ -39,7 +38,9 @@ class JokeView extends GetView<JokeController> {
                   size: 44,
                   color: Colors.white,
                 )),
-                SizedBox(height: 60,),
+            SizedBox(
+              height: 60,
+            ),
             Center(
               child: Column(
                 mainAxisAlignment: MainAxisAlignment.center,
@@ -83,8 +84,7 @@ class JokeView extends GetView<JokeController> {
                         child:
                             GetBuilder<JokeController>(builder: (controller) {
                           if (controller.isLoading) {
-                            //return CircularProgressIndicator();
-                            return SpinKitSpinningLines(color: Colors.white);
+                            return CircularProgressIndicator();
                           } else {
                             return SingleChildScrollView(
                               child: Text(

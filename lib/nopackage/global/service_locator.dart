@@ -14,7 +14,6 @@ final class ServiceLocator {
     SL.registerLazySingleton<JokeServiceInterface>(() => JokeService());
 
     SL.registerFactory<JokeViewModel>(
-        () => JokeViewModel(jokeService: SL<JokeServiceInterface>()));
+       () => JokeViewModel(jokeService: SL<JokeServiceInterface>()));
   }
-
 }
